@@ -14,6 +14,7 @@ export default function Header() {
           // fontFamily: "nunito",
           fontWeight: "900",
           marginBottom: "50px",
+          fontFamily: "nunito",
         }}
       >
         My Todo List

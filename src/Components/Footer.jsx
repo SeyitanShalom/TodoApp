@@ -33,7 +33,7 @@ export default function Footer({ completedTodos, totalTodos }) {
           fontSize: { xs: "1rem", md: "1.3rem" },
           fontWeight: "bold",
           fontFamily: "nunito",
-          color: "beige",
+          color: "white",
         }}
       >
         Completed Todos:{completedTodos}

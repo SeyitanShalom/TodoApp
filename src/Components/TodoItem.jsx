@@ -3,6 +3,9 @@ import RemoveCircleIcon from "@mui/icons-material/RemoveCircle";
 import React from "react";
 
 export default function TodoItem({ todos, setTodos }) {
+  const sortedTodos = todos
+    .slice()
+    .sort((a, b) => Number(a.done) - Number(b.done));
   const handleDelete = (item) => {
     setTodos(todos.filter((todo) => todo !== item));
     console.log("Delete button clicked for item", item.name);
@@ -24,7 +27,7 @@ export default function TodoItem({ todos, setTodos }) {
         padding: "0 20px",
       }}
     >
-      {todos.map((item) => {
+      {sortedTodos.map((item) => {
         return (
           <Stack
             direction="row"
@@ -49,6 +52,7 @@ export default function TodoItem({ todos, setTodos }) {
               sx={
                 item.done
                   ? {
+                      fontSize: { xs: "15px", md: "17px" },
                       textDecoration: "line-through",
                       fontWeight: "bold",
                     }
