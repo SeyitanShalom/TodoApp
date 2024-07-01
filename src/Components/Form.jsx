@@ -28,7 +28,7 @@ export default function Form({ todo, todos, setTodo, setTodos }) {
             onChange={handleChange}
             value={todo.name}
             sx={{
-              width: { xs: "350px", sm: "400px", md: "500px" },
+              width: { xs: "300px", sm: "400px", md: "500px" },
               "& .MuiInput-root": {
                 color: "#000",
                 fontFamily: "nunito",
@@ -55,6 +55,7 @@ export default function Form({ todo, todos, setTodo, setTodos }) {
               "& .MuiInputLabel-standard": {
                 color: "#black",
                 fontWeight: "bold",
+                fontSize: "13px",
                 "&.Mui-focused": {
                   color: "darkcyan",
                 },
@@ -63,12 +64,11 @@ export default function Form({ todo, todos, setTodo, setTodos }) {
           />
           <Button
             type="submit"
+            size="small"
             sx={{
               backgroundColor: "darkcyan",
               color: "white",
-              width: { xs: "20px", sm: "70px" },
-              height: { xs: "45px", sm: "45px" },
-              fontSize: "17px",
+              fontSize: "15px",
               fontWeight: "bold",
               "&:hover": {
                 backgroundColor: "white",

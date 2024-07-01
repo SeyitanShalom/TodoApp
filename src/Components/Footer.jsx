@@ -20,17 +20,17 @@ export default function Footer({ completedTodos, totalTodos }) {
     >
       <Typography
         sx={{
-          fontSize: "1.3rem",
+          fontSize: { xs: "1rem", md: "1.3rem" },
           fontWeight: "bold",
           fontFamily: "nunito",
-          color: "beige",
+          color: "white",
         }}
       >
         Total Todos:{totalTodos}
       </Typography>
       <Typography
         sx={{
-          fontSize: "1.3rem",
+          fontSize: { xs: "1rem", md: "1.3rem" },
           fontWeight: "bold",
           fontFamily: "nunito",
           color: "beige",

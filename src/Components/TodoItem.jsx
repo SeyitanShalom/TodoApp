@@ -17,8 +17,9 @@ export default function TodoItem({ todos, setTodos }) {
   return (
     <Box
       sx={{
-        width: { xs: "400px", sm: "500px", md: "600px" },
-        marginTop: "80px",
+        width: { xs: "350px", sm: "400px", md: "600px" },
+        marginTop: "50px",
+        marginBottom: "100px",
         boxShadow: "0 4px 1px  rgba(0, 70, 70, .2)",
         padding: "0 20px",
       }}
@@ -28,11 +29,10 @@ export default function TodoItem({ todos, setTodos }) {
           <Stack
             direction="row"
             sx={{
-              backgroundColor: "aqua",
               backgroundImage:
                 "linear-gradient(to right,  rgb(0, 139, 139), darkcyan, whitesmoke)",
               color: "white",
-              padding: "20px",
+              padding: { xs: "12px", sm: "15px", md: "20px" },
               marginTop: "25px",
               marginBottom: "25px",
               borderRadius: "5px",
@@ -54,7 +54,7 @@ export default function TodoItem({ todos, setTodos }) {
                     }
                   : {
                       fontWeight: "bold",
-                      fontSize: "20px",
+                      fontSize: { xs: "17px", md: "20px" },
                     }
               }
             >
@@ -66,8 +66,8 @@ export default function TodoItem({ todos, setTodos }) {
               onClick={() => handleDelete(item)}
               sx={{
                 backgroundColor: "darkcyan",
-                width: "35px",
-                height: "35px",
+                width: { xs: "28px", md: "38px" },
+                height: { xs: "28px", md: "38px" },
                 "&:hover": {
                   border: "3px solid rgba(0, 139, 139, .8)",
                   color: "darkcyan",
@@ -77,8 +77,8 @@ export default function TodoItem({ todos, setTodos }) {
             >
               <RemoveCircleIcon
                 sx={{
-                  width: "30px",
-                  height: "30px",
+                  width: { xs: "25px", md: "35px" },
+                  height: { xs: "25px", md: "35px" },
                   color: "white",
                   "&:hover": {
                     color: "darkcyan",
